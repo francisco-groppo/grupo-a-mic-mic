@@ -3,7 +3,8 @@ inst_table = {
     "SUB"   : "0110",
     "LOAD"  : "0100",
     "STORE" : "0011",
-    "JUMP"   : "1"
+    "AND"   : "0001",
+    "JUMP"  : "1"
 }
 
 space_table = {
