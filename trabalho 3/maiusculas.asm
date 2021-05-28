@@ -23,7 +23,7 @@ loop:
 	beq a4, a6, end
 	li a6, 97
 	blt a4, a6, out_of_bounds
-	li a6, 128
+	li a6, 122
 	bgt a4, a6, out_of_bounds
 	addi a4, a4, -32
 	sb a4, 0(a3)
@@ -43,7 +43,7 @@ end:
 	imprime(uppercase_string)
 	
 .data
-what: .asciz "Insert a string\n"
-uppercase_intro: .asciz "Your string in uppercase is: "
+what: .asciz "Insira uma string\n"
+uppercase_intro: .asciz "Sua string em maiúsculas é: "
 string: .space 256
 uppercase_string: .space 256

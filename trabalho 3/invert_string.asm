@@ -46,7 +46,7 @@ end:
 	imprime(inverted_string)
 	
 .data
-what: .asciz "Insert a string\n"
-inverted_intro: .asciz "Your string inverted is: "
+what: .asciz "Insira uma string\n"
+inverted_intro: .asciz "Sua string invertida é: "
 string: .space 256
 inverted_string: .space 256
