@@ -20,7 +20,6 @@ find_end:
 	lb a4, 0(a0)
 	beq a4, zero, invert_begin
 	addi a0, a0, 1
-	addi a6, a6, 1
 	j find_end
 	
 # load data to begin loop
@@ -33,7 +32,7 @@ invert_begin:
 # begin loop
 invert_loop:
 	addi a0, a0, -1
-	lbu a4, 0(a0)
+	lb a4, 0(a0)
 	sb a4, 0(a3)
 	addi a3, a3, 1
 	bne a0, a5, invert_loop
