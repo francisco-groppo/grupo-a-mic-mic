@@ -10,7 +10,6 @@ blue:	.double  0.114
 	la	s0, color
 	la	s1, buffer
 	la	s2, grays
-		
 loopc:
 	lw	a0, (s0) #carrega dado do s0
 	addi	s0, s0, 4 #anda com o endereço

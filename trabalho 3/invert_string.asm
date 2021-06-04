@@ -47,6 +47,6 @@ end:
 	
 .data
 what: .asciz "Insira uma string\n"
-inverted_intro: .asciz "Sua string invertida é: "
+inverted_intro: .asciz "Sua string invertida: "
 string: .space 256
 inverted_string: .space 256
