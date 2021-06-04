@@ -41,20 +41,12 @@ out_of_bounds_less:
 	j find_end
 	
 out_of_bounds_greater:
-	li a6, 90
-	blt a4, a6, less_max_upper
 	addi a0, a0, 1
 	j find_end
 	
 greater_min_upper:
 	li a6, 90
 	blt a4, a6, is_upper
-	addi a0, a0, 1
-	j find_end
-	
-less_max_upper:
-	li a6, 65
-	bgt a4, a6, is_upper
 	addi a0, a0, 1
 	j find_end
 	
@@ -117,8 +109,8 @@ is_equal:
 newline: .asciz  "\n"
 what: .asciz "Insira uma string\n"
 equal_intro: .asciz "A string inserida \""
-equal_conclusion: .asciz "\" È um palÌndromo"
-not_equal: .asciz "\" n„o È um palÌndromo"
+equal_conclusion: .asciz "\" √© um pal√≠ndromo"
+not_equal: .asciz "\" n√£o √© um pal√≠ndromo"
 string: .space 256
 uppercase_string: .space 256
 inverted_string: .space 256
