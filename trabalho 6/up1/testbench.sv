@@ -5,11 +5,9 @@ module testbench();
 
   logic [31:0] WriteData, DataAdr;
   logic        MemWrite;
-  logic [11:0] VGA_COLOR;
-  logic		   VGA_HS_O, VGA_VS_O;
 
   // instantiate device to be tested
-  top dut(clk, reset, WriteData, DataAdr, MemWrite, VGA_COLOR, VGA_HS_O, VGA_VS_O);
+  top dut(clk, reset, WriteData, DataAdr, MemWrite);
   
   // initialize test
   initial
